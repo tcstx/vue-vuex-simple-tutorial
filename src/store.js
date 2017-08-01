@@ -5,16 +5,16 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    _isTrue: true
+    isTrue: true
   },
   getters: {
     isTrue: function(state){
-      return state._isTrue;
+      return state.isTrue;
     }
   },
   mutations: {
     toggle: function(state) {
-      state._isTrue = !state._isTrue;
+      state.isTrue = !state.isTrue;
     }
   },
   actions: {

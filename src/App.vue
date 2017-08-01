@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <button @click="toggleMe">Toggle</button><br/>
-    <img v-if="isTrue1" src="./assets/logo.png">
+    <img v-if="isTrue" src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
   name: 'app',
   computed: {
-    isTrue1: function () {
+    isTrue: function () {
       return this.$store.getters.isTrue;
     }
   },
